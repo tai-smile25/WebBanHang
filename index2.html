@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Detail</title>
+    <style>
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #f5f5dc;
+      }
+      .logo {
+        font-weight: bold;
+        font-size: 18px;
+      }
+      .nav-links {
+        display: flex;
+        list-style: none;
+        gap: 20px;
+      }
+      .nav-right {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .product-section {
+        display: flex;
+        padding: 20px;
+        justify-content: center;
+        gap: 20px;
+      }
+      .product-images {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .related-items {
+        display: flex;
+        gap: 15px;
+        margin-top: 10px;
+        overflow-x: auto;
+      }
+      .item-card {
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 10px;
+        min-width: 150px;
+        text-align: center;
+      }
+      .price {
+        text-decoration: line-through;
+        color: #888;
+        margin-right: 5px;
+      }
+      @media (max-width: 768px) {
+        .product-section {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+    </style>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">Exclusive</div>
+      <ul class="nav-links">
+        <li>Home</li>
+        <li>Contact</li>
+        <li>About</li>
+        <li>Sign Up</li>
+      </ul>
+      <div class="nav-right">
+        <input type="text" placeholder="What are you looking for?" />
+        <i class="fas fa-search"></i>
+        <i class="fas fa-user"></i>
+        <i class="fas fa-heart"></i>
+        <i class="fas fa-shopping-cart"></i>
+      </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">Account / Gaming / HAVIT HV-G92 Gamepad</div>
+
+    <!-- Product Section -->
+    <div class="product-section">
+      <div class="product-images">
+        <img src="https://picsum.photos/seed/picsum/200/300" alt="" />
+        <img src="https://picsum.photos/seed/picsum/200/300" alt="" />
+        <img src="https://picsum.photos/seed/picsum/200/300" alt="" />
+        <img src="https://picsum.photos/seed/picsum/200/300" alt="" />
+      </div>
+      <div class="main-image">
+        <img src="https://picsum.photos/seed/picsum/200/300" alt="" />
+      </div>
+    </div>
+
+    <!-- Related Items -->
+    <div class="related-section">
+      <h3>Related Item</h3>
+      <div class="related-items">
+        <div class="item-card">
+          <img src="https://picsum.photos/seed/picsum/200/300" alt="" />
+          <p>HAVIT HV-G92 Gamepad</p>
+          <p>
+            <span class="price">$120</span> <span class="discount">$80</span>
+          </p>
+        </div>
+        <div class="item-card">
+          <img src="https://picsum.photos/seed/picsum/200/300" alt="" />
+          <p>AK-900 Wired Keyboard</p>
+          <p>
+            <span class="price">$60</span> <span class="discount">$40</span>
+          </p>
+        </div>
+        <div class="item-card">
+          <img src="https://picsum.photos/seed/picsum/200/300" alt="" />
+          <p>IPS LCD Gaming Monitor</p>
+          <p>
+            <span class="price">$300</span> <span class="discount">$250</span>
+          </p>
+        </div>
+        <div class="item-card">
+          <img src="https://picsum.photos/seed/picsum/200/300" alt="" />
+          <p>RGB Liquid CPU Cooler</p>
+          <p>
+            <span class="price">$180</span> <span class="discount">$160</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
